@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class Formatter {
+class EFormatters {
   // ----------- Existing Formatters -----------
 
   static String formatDate(DateTime? date) {

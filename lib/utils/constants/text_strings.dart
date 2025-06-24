@@ -1,5 +1,5 @@
 /// This class contains all the App Text in String formats.
-class Texts {
+class ETextStrings {
   // -- GLOBAL Texts
   // -- OnBoarding Texts
   static const String onBoardingTitlel = "Choose your product";

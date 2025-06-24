@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 class EHelperFunctions {
@@ -39,7 +38,9 @@ class EHelperFunctions {
 
   /// Shows a simple [SnackBar] with a message.
   static void showSnackBar(BuildContext context, String message) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(message)));
   }
 
   /// Displays an [AlertDialog] with title and message.
@@ -86,7 +87,10 @@ class EHelperFunctions {
   }
 
   /// Formats [DateTime] to string using [intl].
-  static String getFormattedDate(DateTime date, {String format = 'dd MMM yyyy'}) {
+  static String getFormattedDate(
+    DateTime date, {
+    String format = 'dd MMM yyyy',
+  }) {
     return DateFormat(format).format(date);
   }
 
@@ -130,8 +134,14 @@ class EHelperFunctions {
         title: Text(title),
         content: Text(content),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context, false), child: Text(cancelText)),
-          TextButton(onPressed: () => Navigator.pop(context, true), child: Text(confirmText)),
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(cancelText),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(confirmText),
+          ),
         ],
       ),
     );

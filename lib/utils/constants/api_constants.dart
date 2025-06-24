@@ -1,4 +1,27 @@
-/* -- LIST OF Constants used in APIs -- */
+import 'package:e_shop/utils/constants/enums.dart';
 
-// Example
-const String secretAPIKey = "cwt_live_b2da6ds3df3e785v8ddc59198f7615ba";
+class ApiResponse {
+  final ApiStatus status;
+  final dynamic data;
+  final String? message;
+  final int? statusCode;
+
+  const ApiResponse({
+    required this.status,
+    this.data,
+    this.message,
+    this.statusCode,
+  });
+
+  factory ApiResponse.success(dynamic data, [int? statusCode]) => ApiResponse(
+    status: ApiStatus.success,
+    data: data,
+    statusCode: statusCode,
+  );
+
+  factory ApiResponse.error(String message, [int? statusCode]) => ApiResponse(
+    status: ApiStatus.error,
+    message: message,
+    statusCode: statusCode,
+  );
+}

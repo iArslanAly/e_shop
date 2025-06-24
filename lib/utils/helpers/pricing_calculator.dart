@@ -1,7 +1,11 @@
+abstract class HasTotalPrice {
+  double get totalPrice;
+}
+
 class EPricingCalculator {
   /// Calculates subtotal for all cart items
-  static double calculateSubtotal(List<CartItemModel> cartItems) {
-    return cartItems.fold(0.0, (sum, item) => sum + item.totalPrice);
+  static double calculateSubtotal(List<HasTotalPrice> cartItems) {
+    return cartItems.fold(0.0, (sum, item) => sum + (item.totalPrice));
   }
 
   /// Calculates tax based on location
@@ -35,27 +39,27 @@ class EPricingCalculator {
 
   /// Calculates the grand total
   static double calculateTotal({
-    required List<T> cartItems,
+    required List<HasTotalPrice> cartItems,
     required String location,
     double discountPercentage = 0.0,
   }) {
     final subtotal = calculateSubtotal(cartItems);
     final tax = calculateTax(subtotal, location);
-    final discount = calculateDiscount(subtotal, discountPercentage);
+    final discount = calculateDiscount(subtotal, discountPercentage: discountPercentage);
     final shipping = getShippingCost(location);
     return subtotal + tax + shipping - discount;
   }
 
   /// Returns all calculated details as a map (both raw and formatted)
   static Map<String, dynamic> calculateFullBreakdown({
-    required List<T> cartItems,
+    required List<HasTotalPrice> cartItems,
     required String location,
     double discountPercentage = 0.0,
   }) {
     final subtotal = calculateSubtotal(cartItems);
     final tax = calculateTax(subtotal, location);
     final shipping = getShippingCost(location);
-    final discount = calculateDiscount(subtotal, discountPercentage);
+    final discount = calculateDiscount(subtotal, discountPercentage: discountPercentage);
     final total = subtotal + tax + shipping - discount;
 
     return {

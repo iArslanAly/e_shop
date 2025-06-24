@@ -15,3 +15,5 @@ enum PaymentMethods {
   razorPay,
   paytm,
 }
+
+enum ApiStatus { success, error }
