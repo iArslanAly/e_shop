@@ -14,7 +14,7 @@ class LocalStorage {
   }
 
   /// Read value of type T. If key doesn't exist, return defaultValue
-  static T? readData<T>(String key, {T? defaultValue}) {
+  static readData<T>(String key, {T? defaultValue}) {
     return _box.read<T>(key) ?? defaultValue;
   }
 

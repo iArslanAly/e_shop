@@ -141,7 +141,7 @@ class EFormatters {
   }
   // Returns a username-style string like @john_doe
 static String formatUsername(String name) {
-  return '@' + name.trim().toLowerCase().replaceAll(RegExp(r'\s+'), '_');
+  return '@${name.trim().toLowerCase().replaceAll(RegExp(r'\s+'), '_')}';
 }
 
 // Adds ordinal suffix: 1 → 1st, 2 → 2nd, 3 → 3rd...
