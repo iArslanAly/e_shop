@@ -26,6 +26,10 @@ class ESizs {
   static const double appBarHeight = 56.0;
   // Image sizes
   static const double imageThumbSize = 80.0;
+  static const double imageSize = 100.0;
+  static const double imageHeight = 200.0;
+  
+
 
   // Default spacing between sections
   static const double defaultSpace = 24.0;
