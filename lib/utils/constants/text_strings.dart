@@ -41,7 +41,8 @@ class ETextStrings {
   static const String authEmail = "E-Mail";
   static const String authPassword = "Password";
   static const String authConfirmPassword = "Confirm Password";
-  static const String authName = "Name";
+  static const String authFirstName = "First Name";
+  static const String authLastName = "Last Name";
   static const String authUsername = "Username";
   static const String authPhone = "Phone Number";
   static const String authPasswordHint = "Enter your password";
@@ -52,11 +53,14 @@ class ETextStrings {
   static const String authRegisterButton = "Register";
   static const String authForgotPasswordButton = "Reset Password";
   static const String authSocialLoginTitle = "Or login with";
+  static const String authSocialSignupTitle = "Or sign up with";
   static const String authSocialLoginGoogle = "Google";
   static const String authSocialLoginFacebook = "Facebook";
   static const String authSocialLoginApple = "Apple";
-  static const String authTermsAndConditions =
-      "By signing up, you agree to our Terms and Conditions and Privacy Policy.";
+  static const String authSignupTerms = "I agree to  ";
+  static const String authTermsAndConditions = 'Terms of Use';
+  static const String authand = ' and';
+  static const String authPrivacyPolicy = " Privacy Policy.";
   static const String authAlreadyHaveAccount =
       "Already have an account? Login here";
   static const String authDontHaveAccount =

@@ -133,6 +133,7 @@ class EFormatters {
   }
 
   static String formatHexColor(Color color) {
+    // ignore: deprecated_member_use
     return '#${color.value.toRadixString(16).padLeft(8, '0').toUpperCase()}';
   }
 

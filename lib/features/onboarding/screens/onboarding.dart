@@ -1,5 +1,5 @@
 import 'package:e_shop/features/onboarding/onboardingBloc/onboarding_bloc.dart';
-import 'package:e_shop/features/onboarding/screens/widgets/onboarding_next_Button.dart';
+import 'package:e_shop/features/onboarding/screens/widgets/onboarding_next_button.dart';
 import 'package:e_shop/routes/routes.dart';
 import 'package:e_shop/utils/constants/colors.dart';
 import 'package:e_shop/utils/helpers/helper_functions.dart';
@@ -35,7 +35,7 @@ class OnboardingScreen extends StatelessWidget {
               controller: pageController,
               onPageChanged: (index) => {
                 context.read<OnboardingBloc>().add(PageChangedEvent(index)),
-              },
+              }, 
               children: [
                 /// Onboarding Page 1
                 OnboardiingPage(
@@ -59,7 +59,6 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ],
             ),
-
             /// Skip Button
             Positioned(
               top: EDeviceUtils.getAppBarHeight(),
@@ -77,7 +76,6 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ),
             ),
-
             /// Dot Navigation SmoothPageIndicator
             OnboardingDotNavigator(
               pageController: pageController,

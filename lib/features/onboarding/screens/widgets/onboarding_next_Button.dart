@@ -1,4 +1,3 @@
-
 import 'package:e_shop/utils/constants/colors.dart';
 import 'package:e_shop/utils/constants/sizes.dart';
 import 'package:e_shop/utils/device/device_utility.dart';

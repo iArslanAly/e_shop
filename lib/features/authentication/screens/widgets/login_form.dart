@@ -1,3 +1,4 @@
+import 'package:e_shop/routes/routes.dart';
 import 'package:e_shop/utils/constants/sizes.dart';
 import 'package:e_shop/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +67,7 @@ class ELoginForm extends StatelessWidget {
             width: double.infinity,
             child: OutlinedButton(
               onPressed: () {
-                // Handle login action
+                Navigator.pushNamed(context, Routes.register);
               },
               child: Text(ETextStrings.authRegisterButton),
             ),

@@ -28,8 +28,6 @@ class ESizs {
   static const double imageThumbSize = 80.0;
   static const double imageSize = 100.0;
   static const double imageHeight = 200.0;
-  
-
 
   // Default spacing between sections
   static const double defaultSpace = 24.0;
@@ -68,4 +66,7 @@ class ESizs {
 
   // Grid view spacing
   static const double gridViewSpacing = 16.0;
+
+  // baseline height,
+  static const double baselineHeight = 38.0;
 }

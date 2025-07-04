@@ -1,4 +1,5 @@
 import 'package:e_shop/features/authentication/screens/login_screen.dart';
+import 'package:e_shop/features/authentication/signup_screen.dart';
 import 'package:e_shop/features/onboarding/screens/onboarding.dart';
 import 'package:e_shop/routes/routes.dart';
 import 'package:flutter/material.dart';
@@ -10,11 +11,10 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case Routes.login:
         return MaterialPageRoute(builder: (_) => LoginScreen());
-      case '/signup':
+      case Routes.register:
         return MaterialPageRoute(
-          builder: (_) => const Placeholder(
-            child: Center(child: Text('Signup Screen Placeholder')),
-          ),
+          builder: (_) => SignupScreen(),
+          settings: settings,
         );
       default:
         return MaterialPageRoute(

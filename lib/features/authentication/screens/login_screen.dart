@@ -1,5 +1,6 @@
 import 'package:e_shop/common/styles/spacing_styles.dart';
 import 'package:e_shop/common/widgets/form_divider.dart';
+import 'package:e_shop/common/widgets/social_button.dart';
 import 'package:e_shop/features/authentication/screens/widgets/login_form.dart';
 
 import 'package:e_shop/utils/constants/image_strings.dart';
@@ -44,6 +45,8 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: ESizs.spaceBtwSections),
             EFormDivider(text: ETextStrings.authSocialLoginTitle),
             SizedBox(height: ESizs.spaceBtwSections),
+            // Social login buttons
+            TSocialButton(),
           ],
         ),
       ),
