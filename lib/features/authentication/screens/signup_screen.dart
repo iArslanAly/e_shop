@@ -1,7 +1,7 @@
 import 'package:e_shop/common/styles/spacing_styles.dart';
 import 'package:e_shop/common/widgets/form_divider.dart';
 import 'package:e_shop/common/widgets/social_button.dart';
-import 'package:e_shop/features/authentication/screens/widgets/signup_form.dart';
+import 'package:e_shop/features/authentication/widgets/signup_form.dart';
 
 import 'package:e_shop/utils/constants/sizes.dart';
 import 'package:e_shop/utils/constants/text_strings.dart';
@@ -14,11 +14,13 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SingleChildScrollView(
         padding: ESpacingStyles.paddingWithAppBarHieght,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            
             Text(
               ETextStrings.authRegisterTitle,
               style: Theme.of(context).textTheme.headlineMedium,

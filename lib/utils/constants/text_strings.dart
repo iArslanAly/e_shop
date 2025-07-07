@@ -39,6 +39,21 @@ class ETextStrings {
       "Enter your email to reset your password";
   static const String authEmailHint = "Enter your email";
   static const String authEmail = "E-Mail";
+  static const String authEmailError = "Please enter a valid email address";
+  static const String authPasswordError = "Please enter a valid password";
+  static const String authPasswordLengthError =
+      "Password must be at least 6 characters long";
+  static const String authVerifyEmailTitle = 'Verify Your Email';
+  static const String authVerifyEmailSubtitle =
+      "A verification link has been sent to your email. Please check your inbox and click the link to verify your email address.";
+  static const String authVerifyEmailButton = "Resend Verification Email";
+  static const String authVerifyEmailSuccessTitle =
+      "Your email has been verified successfully!";
+  static const String authVerifyEmailSuccessSubtitle =
+      "Welcome to E-Shop! Your Ultimate Shopping Destination for Quality Products at Unbeatable Prices. Your account is now ready to use. Unleash the joy of shopping with us!";
+  static const String authVerifyEmailError =
+      "There was an error verifying your email. Please try again later.";
+  static const String authLoginButtonText = "Login";
   static const String authPassword = "Password";
   static const String authConfirmPassword = "Confirm Password";
   static const String authFirstName = "First Name";
@@ -51,6 +66,9 @@ class ETextStrings {
   static const String authPhoneHint = "Enter your phone number";
   static const String authLoginButton = "Login";
   static const String authRegisterButton = "Register";
+  static const String authContinue = "Continue";
+  static const String authresendEmail = "Resend Email";
+
   static const String authForgotPasswordButton = "Reset Password";
   static const String authSocialLoginTitle = "Or login with";
   static const String authSocialSignupTitle = "Or sign up with";

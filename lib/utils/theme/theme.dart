@@ -1,3 +1,4 @@
+import 'package:e_shop/utils/theme/customTheme/appbar_theme.dart';
 import 'package:e_shop/utils/theme/customTheme/bottom_sheet_theme.dart';
 import 'package:e_shop/utils/theme/customTheme/checkbox_theme.dart';
 import 'package:e_shop/utils/theme/customTheme/chip_theme.dart';
@@ -17,6 +18,7 @@ class EAppThemme {
     chipTheme: EChipTheme.lightChipTheme,
     textTheme: ETextTheme.lightTextTheme,
     scaffoldBackgroundColor: Colors.white,
+    appBarTheme: EAppBarTheme.lightAppBarTheme,
     fontFamily: GoogleFonts.poppins().fontFamily,
     checkboxTheme: ECheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme: EBottomSheetTheme.lightBottomSheetTheme,
@@ -31,10 +33,11 @@ class EAppThemme {
     textTheme: ETextTheme.darkTextTheme,
     chipTheme: EChipTheme.darkChipTheme,
     scaffoldBackgroundColor: Colors.black,
+    appBarTheme: EAppBarTheme.darkAppBarTheme,
     fontFamily: GoogleFonts.poppins().fontFamily,
-    elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
     checkboxTheme: ECheckboxTheme.darkCheckboxTheme,
     bottomSheetTheme: EBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: EOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: ETextFormFieldTheme.darkInputDecorationTheme,
   );

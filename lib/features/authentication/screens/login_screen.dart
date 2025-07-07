@@ -1,7 +1,7 @@
 import 'package:e_shop/common/styles/spacing_styles.dart';
 import 'package:e_shop/common/widgets/form_divider.dart';
 import 'package:e_shop/common/widgets/social_button.dart';
-import 'package:e_shop/features/authentication/screens/widgets/login_form.dart';
+import 'package:e_shop/features/authentication/widgets/login_form.dart';
 
 import 'package:e_shop/utils/constants/image_strings.dart';
 import 'package:e_shop/utils/constants/sizes.dart';
@@ -23,8 +23,10 @@ class LoginScreen extends StatelessWidget {
               children: [
                 Image(
                   height: ESizs.imageHeight,
+
                   image: AssetImage(EImages.eStore),
                 ),
+                const SizedBox(height: ESizs.sm),
 
                 Text(
                   ETextStrings.authLoginTitle,

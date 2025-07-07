@@ -9,9 +9,13 @@ class EImages {
 
   // Onboarding images
   static const String onBoardingImage1 =
-      'assets/images/onBoardingImages/searching.gif';
+      'assets/images/onBoardingImages/searching.json';
   static const String onBoardingImage2 =
-      'assets/images/onBoardingImages/delivery.gif';
+      'assets/images/onBoardingImages/delivery.json';
   static const String onBoardingImage3 =
-      'assets/images/onBoardingImages/shopping.gif';
+      'assets/images/onBoardingImages/shopping.json';
+  // Authentication images
+  static const String authVerifyImage = 'assets/images/auth/verify.json';
+  static const String authVerifiedImage = 'assets/images/auth/verified.json';
+  
 }

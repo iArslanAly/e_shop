@@ -1,4 +1,4 @@
-
+import 'package:e_shop/routes/routes.dart';
 import 'package:e_shop/utils/constants/colors.dart';
 import 'package:e_shop/utils/constants/sizes.dart';
 import 'package:e_shop/utils/constants/text_strings.dart';
@@ -123,7 +123,10 @@ class SignupForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                // Handle login action
+                Navigator.pushNamed(
+                  context,
+                  Routes.verifyEmail, // Replace with your login route
+                );
               },
               child: Text(ETextStrings.authRegisterButton),
             ),

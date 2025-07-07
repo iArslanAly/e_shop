@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:e_shop/utils/constants/sizes.dart';
 
 import 'package:e_shop/utils/helpers/helper_functions.dart';
+import 'package:lottie/lottie.dart';
 
 class OnboardiingPage extends StatelessWidget {
   const OnboardiingPage({
@@ -23,10 +24,10 @@ class OnboardiingPage extends StatelessWidget {
       padding: const EdgeInsets.all(ESizs.defaultSpace),
       child: Column(
         children: [
-          Image(
-            width: EHelperFunctions.screenWidth(context) * 8.0,
+          Lottie.asset(
+            image,
+            width: EHelperFunctions.screenWidth(context) * 0.8,
             height: EHelperFunctions.screenHeight(context) * 0.6,
-            image: AssetImage(image),
           ),
           Text(
             title,

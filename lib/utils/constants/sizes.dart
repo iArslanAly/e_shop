@@ -27,7 +27,7 @@ class ESizs {
   // Image sizes
   static const double imageThumbSize = 80.0;
   static const double imageSize = 100.0;
-  static const double imageHeight = 200.0;
+  static const double imageHeight = 150.0;
 
   // Default spacing between sections
   static const double defaultSpace = 24.0;
