@@ -39,22 +39,22 @@ class OnboardingScreen extends StatelessWidget {
               children: [
                 /// Onboarding Page 1
                 OnboardiingPage(
-                  title: ETextStrings.onBoardingTitlel1,
-                  subTitle: ETextStrings.onBoardingSubTitle1,
+                  title: ETextStrings.onboardingTitle1,
+                  subTitle: ETextStrings.onboardingSubtitle1,
                   image: EImages.onBoardingImage1,
                 ),
 
                 /// Onboarding Page 2
                 OnboardiingPage(
-                  title: ETextStrings.onBoardingTitle2,
-                  subTitle: ETextStrings.onBoardingSubTitle2,
+                  title: ETextStrings.onboardingTitle2,
+                  subTitle: ETextStrings.onboardingSubtitle2,
                   image: EImages.onBoardingImage2,
                 ),
 
                 /// Onboarding Page 3
                 OnboardiingPage(
-                  title: ETextStrings.onBoardingTitle3,
-                  subTitle: ETextStrings.onBoardingSubTitle3,
+                  title: ETextStrings.onboardingTitle3,
+                  subTitle: ETextStrings.onboardingSubtitle3,
                   image: EImages.onBoardingImage3,
                 ),
               ],

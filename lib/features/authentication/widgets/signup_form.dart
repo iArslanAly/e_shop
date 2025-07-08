@@ -101,7 +101,7 @@ class SignupForm extends StatelessWidget {
                               ),
                         ),
                         TextSpan(
-                          text: ETextStrings.authand,
+                          text: ETextStrings.authAnd,
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         TextSpan(

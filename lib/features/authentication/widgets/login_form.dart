@@ -47,6 +47,7 @@ class ELoginForm extends StatelessWidget {
               TextButton(
                 onPressed: () {
                   // Handle forgot password action
+                  Navigator.pushNamed(context, Routes.forgetPassword);
                 },
                 child: Text(ETextStrings.authForgotPasswordButton),
               ),
@@ -58,6 +59,11 @@ class ELoginForm extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 // Handle login action
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  Routes.home,
+                  (route) => false,
+                );
               },
               child: Text(ETextStrings.authLoginButton),
             ),
