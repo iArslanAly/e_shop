@@ -1,4 +1,3 @@
-
 class ETextStrings {
   // -- Global
   static const String appName = "E-Shop";
@@ -52,7 +51,7 @@ class ETextStrings {
   static const String authPasswordRestEmailSentSubtitle =
       "A password reset link has been sent to your email. Please check your inbox and follow the instructions to reset your password.";
   static const String authPasswordResetSuccessTitle =
-      "Password Reset Successful!"; 
+      "Password Reset Successful!";
   static const String authVerifyEmailSuccessTitle =
       "Your email has been verified successfully!";
   static const String authVerifyEmailSuccessSubtitle =
@@ -93,6 +92,12 @@ class ETextStrings {
   // -- Home
   static const String homeAppBarTitle = "Good day for shopping";
   static const String homeAppBarSubtitle = "Arslan Ali";
+  static const String homeSearchHint = "Search for products, brands, and more";
+  static const String homeCategoriesTitle = "Popular Categories";
+  static const String homeFeaturedProductsTitle = "Featured Products";
+  static const String homeBestSellersTitle = "Best Sellers";
+  static const String homeNewArrivalsTitle = "New Arrivals";
+  static const String homeViewAll = "View All";
 
   // -- Product
   static const String productDetailsTitle = "Product Details";

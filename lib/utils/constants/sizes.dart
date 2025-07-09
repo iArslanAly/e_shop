@@ -52,7 +52,7 @@ class ESizs {
   static const double spaceBtwInputFields = 16.0;
 
   // Card sizes
-  static const double cardRadiusg = 16.0;
+  static const double cardRadiusLg = 16.0;
   static const double cardRadiusd = 12.0;
   static const double cardRadiusSm = 10.0;
   static const double cardRadiuss = 6.0;

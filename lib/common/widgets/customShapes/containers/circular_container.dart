@@ -3,30 +3,40 @@ import 'package:flutter/material.dart';
 class ECircularContaiiner extends StatelessWidget {
   const ECircularContaiiner({
     super.key,
-    this.width = 400,
-    this.height = 400,
-    this.radius = 400,
+    this.width,
+    this.height,
+    this.radius,
     this.padding,
     this.color,
     this.child,
+    this.margin,
   });
+
   final double? width;
   final double? height;
   final double? radius;
-  final double? padding;
-
+  final EdgeInsetsGeometry? padding;
+  final EdgeInsetsGeometry? margin;
   final Color? color;
   final Widget? child;
 
   @override
   Widget build(BuildContext context) {
+    final double finalWidth = width ?? 400;
+    final double finalHeight = height ?? 400;
+
+    final double finalRadius = radius != null
+        ? radius!
+        : (width != null && height != null ? (width! + height!) / 2 : 400);
+
     return Container(
-      width: width,
-      height: height,
-      padding: EdgeInsets.all(padding ?? 0),
+      width: finalWidth,
+      height: finalHeight,
+      margin: margin,
+      padding: padding ?? EdgeInsets.zero,
       decoration: BoxDecoration(
         color: color ?? Theme.of(context).colorScheme.primaryContainer,
-        borderRadius: BorderRadius.circular(radius ?? 0),
+        borderRadius: BorderRadius.circular(finalRadius),
       ),
       child: child,
     );

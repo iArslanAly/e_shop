@@ -3,8 +3,8 @@ import 'package:e_shop/common/widgets/customShapes/curvedEdges/curve_edges_widge
 import 'package:e_shop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class EPrimeryHeeader extends StatelessWidget {
-  const EPrimeryHeeader({super.key, required this.child});
+class EPrimeryHeeaderContainer extends StatelessWidget {
+  const EPrimeryHeeaderContainer({super.key, required this.child});
   final Widget child;
   @override
   Widget build(BuildContext context) {
@@ -30,6 +30,7 @@ class EPrimeryHeeader extends StatelessWidget {
                   color: EColors.white.withValues(alpha: 0.1),
                 ),
               ),
+              child,
             ],
           ),
         ),

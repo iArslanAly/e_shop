@@ -1,4 +1,4 @@
-import 'package:e_shop/features/onboarding/onboardingBloc/onboarding_bloc.dart';
+import 'package:e_shop/features/onboarding/bloc/onboarding_bloc.dart';
 import 'package:e_shop/features/onboarding/screens/widgets/onboarding_next_button.dart';
 import 'package:e_shop/routes/routes.dart';
 import 'package:e_shop/utils/constants/colors.dart';

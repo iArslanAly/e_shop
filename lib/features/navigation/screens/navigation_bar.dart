@@ -1,4 +1,4 @@
-import 'package:e_shop/features/home/home_screen.dart';
+import 'package:e_shop/features/home/screens/home_screen.dart';
 import 'package:e_shop/features/navigation/bloc/navigation_bloc.dart';
 import 'package:e_shop/features/profile/profile_screen.dart';
 import 'package:e_shop/features/store/store_screen.dart';
@@ -11,7 +11,7 @@ class AppBottomNavigationBar extends StatelessWidget {
   const AppBottomNavigationBar({super.key});
 
   static final List<Widget Function()> _screenBuilders = [
-    () => const HomeScreen(),
+    () => HomeScreen(),
     () => const StoreScreen(),
     () => const WishlistScreen(),
     () => const ProfileScreen(),

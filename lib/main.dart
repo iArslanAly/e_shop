@@ -1,5 +1,5 @@
 import 'package:e_shop/app.dart';
-import 'package:e_shop/features/onboarding/onboardingBloc/onboarding_bloc.dart';
+import 'package:e_shop/features/onboarding/bloc/onboarding_bloc.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
