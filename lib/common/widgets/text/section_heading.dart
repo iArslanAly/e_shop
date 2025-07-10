@@ -20,7 +20,7 @@ class ESectionHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: ESizs.defaultSpace),
+      padding: EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

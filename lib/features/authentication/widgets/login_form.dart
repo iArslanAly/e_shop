@@ -19,7 +19,7 @@ class ELoginForm extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwInputFields),
+          const SizedBox(height: ESizes.spaceBtwInputFields),
           TextFormField(
             obscureText: true,
             decoration: InputDecoration(
@@ -29,7 +29,7 @@ class ELoginForm extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwInputFields / 2),
+          const SizedBox(height: ESizes.spaceBtwInputFields / 2),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -53,7 +53,7 @@ class ELoginForm extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: ESizs.spaceBtwSections),
+          const SizedBox(height: ESizes.spaceBtwSections),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
@@ -68,7 +68,7 @@ class ELoginForm extends StatelessWidget {
               child: Text(ETextStrings.authLoginButton),
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwItems),
+          const SizedBox(height: ESizes.spaceBtwItems),
           SizedBox(
             width: double.infinity,
             child: OutlinedButton(

@@ -6,7 +6,7 @@ class EGridLayout extends StatelessWidget {
     super.key,
     required this.itemCount,
     required this.itemBuilder,
-    this.mainAxisExtent = 288,
+    this.mainAxisExtent = ESizes.d288dp,
   });
 
   final int itemCount;
@@ -15,17 +15,17 @@ class EGridLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(ESizs.gridViewSpacing),
+      padding: const EdgeInsets.all(ESizes.gridViewSpacing),
       child: GridView.builder(
         itemCount: itemCount,
         shrinkWrap: true,
         padding: EdgeInsets.zero,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: ESizs.gridViewSpacing,
-          mainAxisSpacing: ESizs.gridViewSpacing,
-          childAspectRatio: 0.7,
+          crossAxisCount: ESizes.d2,
+          crossAxisSpacing: ESizes.gridViewSpacing,
+          mainAxisSpacing: ESizes.gridViewSpacing,
+          childAspectRatio: ESizes.pointSeven,
           mainAxisExtent: mainAxisExtent,
         ),
         itemBuilder: itemBuilder,

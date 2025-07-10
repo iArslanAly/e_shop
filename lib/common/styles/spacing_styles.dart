@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class ESpacingStyles {
   static const EdgeInsetsGeometry paddingWithAppBarHieght = EdgeInsets.only(
-    top: ESizs.appBarHeight,
-    left: ESizs.defaultSpace,
-    right: ESizs.defaultSpace,
-    bottom: ESizs.defaultSpace,
+    top: ESizes.appBarHeight,
+    left: ESizes.defaultSpace,
+    right: ESizes.defaultSpace,
+    bottom: ESizes.defaultSpace,
   );
 }

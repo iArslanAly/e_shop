@@ -19,7 +19,7 @@ class EmailVerification extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.all(ESizs.defaultSpace),
+        padding: const EdgeInsets.all(ESizes.defaultSpace),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -32,20 +32,20 @@ class EmailVerification extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: ESizs.spaceBtwItems),
+            const SizedBox(height: ESizes.spaceBtwItems),
             Text(
               'iarslanaly@yahooo.com',
               style: Theme.of(context).textTheme.labelLarge,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: ESizs.defaultSpace),
+            const SizedBox(height: ESizes.defaultSpace),
             Text(
               subtitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
 
-            const SizedBox(height: ESizs.spaceBtwItems),
+            const SizedBox(height: ESizes.spaceBtwItems),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

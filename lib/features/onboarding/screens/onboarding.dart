@@ -35,7 +35,7 @@ class OnboardingScreen extends StatelessWidget {
               controller: pageController,
               onPageChanged: (index) => {
                 context.read<OnboardingBloc>().add(PageChangedEvent(index)),
-              }, 
+              },
               children: [
                 /// Onboarding Page 1
                 OnboardiingPage(
@@ -59,10 +59,11 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ],
             ),
+
             /// Skip Button
             Positioned(
               top: EDeviceUtils.getAppBarHeight(),
-              right: ESizs.defaultSpace,
+              right: ESizes.defaultSpace,
               child: TextButton(
                 onPressed: () =>
                     Navigator.pushReplacementNamed(context, Routes.login),
@@ -76,6 +77,7 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ),
             ),
+
             /// Dot Navigation SmoothPageIndicator
             OnboardingDotNavigator(
               pageController: pageController,

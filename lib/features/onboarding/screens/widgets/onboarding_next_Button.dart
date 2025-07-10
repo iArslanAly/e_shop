@@ -13,11 +13,11 @@ class OnBoardingNextButton extends StatelessWidget {
     final dark = EHelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: EDeviceUtils.getBottomNavigationBarHeight() + 5,
-      right: ESizs.defaultSpace,
+      right: ESizes.defaultSpace,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),
-          padding: const EdgeInsets.all(ESizs.defaultSpace),
+          padding: const EdgeInsets.all(ESizes.defaultSpace),
           backgroundColor: dark ? EColors.buttonPrimary : EColors.dark,
         ),
         onPressed: onPressed,

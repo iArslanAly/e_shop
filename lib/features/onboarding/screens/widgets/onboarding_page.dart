@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-
 import 'package:e_shop/utils/constants/sizes.dart';
 
 import 'package:e_shop/utils/helpers/helper_functions.dart';
@@ -21,7 +20,7 @@ class OnboardiingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(ESizs.defaultSpace),
+      padding: const EdgeInsets.all(ESizes.defaultSpace),
       child: Column(
         children: [
           Lottie.asset(
@@ -34,7 +33,7 @@ class OnboardiingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          SizedBox(height: ESizs.spaceBtwItems),
+          SizedBox(height: ESizes.spaceBtwItems),
           Text(
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium,

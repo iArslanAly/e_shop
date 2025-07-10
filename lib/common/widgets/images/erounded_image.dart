@@ -14,7 +14,7 @@ class ERoundedImage extends StatelessWidget {
     this.padding,
     this.isNetworkImage = false,
     this.onTap,
-    this.borderRadius = ESizs.md,
+    this.borderRadius = ESizes.md,
   });
   final double width, height;
   final String imageUrl;

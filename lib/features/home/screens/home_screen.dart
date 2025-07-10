@@ -1,13 +1,13 @@
-import 'package:e_shop/common/widgets/layouts/grid_layout.dart';
-import 'package:e_shop/common/widgets/products/productCards/product_card_vertical.dart';
-import 'package:e_shop/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../common/widgets/customShapes/containers/primery_hader_container.dart';
 import '../../../common/widgets/customShapes/containers/search_container.dart';
+import '../../../common/widgets/layouts/grid_layout.dart';
+import '../../../common/widgets/products/productCards/product_card_vertical.dart';
 import '../../../common/widgets/text/section_heading.dart';
 import '../../../utils/constants/colors.dart';
+import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/constants/text_strings.dart';
 import '../widgets/hom_category.dart';
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   /// AppBar
                   EHomeAppBar(),
-                  SizedBox(height: ESizs.spaceBtwSections),
+                  SizedBox(height: ESizes.spaceBtwSections),
 
                   /// searchbar
                   ESearchContainer(
@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                       /// Handle search container tap
                     },
                   ),
-                  SizedBox(height: ESizs.spaceBtwSections),
+                  SizedBox(height: ESizes.spaceBtwSections),
 
                   /// Categoris
                   ESectionHeading(
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                     showActionButton: false,
                     title: ETextStrings.homeCategoriesTitle,
                   ),
-                  SizedBox(height: ESizs.spaceBtwItems),
+                  SizedBox(height: ESizes.spaceBtwItems),
                   EHomeCategory(),
                 ],
               ),
@@ -56,12 +56,12 @@ class HomeScreen extends StatelessWidget {
 
             /// Promo Slider
             Padding(
-              padding: const EdgeInsets.all(ESizs.defaultSpace),
+              padding: const EdgeInsets.all(ESizes.defaultSpace),
               child: EPromoSlider(
                 images: [EImages.banner1, EImages.banner2, EImages.banner3],
               ),
             ),
-            SizedBox(height: ESizs.spaceBtwSections),
+            SizedBox(height: ESizes.spaceBtwSections),
 
             /// items section
             EGridLayout(

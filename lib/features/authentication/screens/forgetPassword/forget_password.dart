@@ -12,7 +12,7 @@ class ForgetPasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(ESizs.defaultSpace),
+        padding: EdgeInsets.all(ESizes.defaultSpace),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -20,12 +20,12 @@ class ForgetPasswordScreen extends StatelessWidget {
               ETextStrings.authForgotPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const SizedBox(height: ESizs.spaceBtwItems),
+            const SizedBox(height: ESizes.spaceBtwItems),
             Text(
               ETextStrings.authForgotPasswordSubtitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
-            const SizedBox(height: ESizs.defaultSpace),
+            const SizedBox(height: ESizes.defaultSpace),
             TextFormField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
@@ -33,7 +33,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: ESizs.defaultSpace),
+            const SizedBox(height: ESizes.defaultSpace),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

@@ -42,12 +42,12 @@ class EPromoSlider extends StatelessWidget {
                     width: double.infinity,
                     height: 200,
                     fit: BoxFit.cover,
-                    borderRadius: ESizs.cardRadiusLg,
+                    borderRadius: ESizes.cardRadiusLg,
                   );
                 }).toList(),
               ),
 
-              const SizedBox(height: ESizs.spaceBtwItems),
+              const SizedBox(height: ESizes.spaceBtwItems),
 
               /// Dot Indicators
               BlocBuilder<CarouslSliderBloc, CarouslSliderState>(
@@ -63,7 +63,7 @@ class EPromoSlider extends StatelessWidget {
                             ? EColors.primary
                             : EColors.grey,
                         margin: const EdgeInsets.only(
-                          right: ESizs.spaceBtwItems,
+                          right: ESizes.spaceBtwItems,
                         ),
                       );
                     }),

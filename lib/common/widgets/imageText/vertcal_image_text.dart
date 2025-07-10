@@ -1,4 +1,3 @@
-
 import 'package:e_shop/utils/constants/colors.dart';
 import 'package:e_shop/utils/constants/sizes.dart';
 import 'package:e_shop/utils/helpers/helper_functions.dart';
@@ -25,7 +24,7 @@ class EVerticalImageText extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(ESizs.sm),
+            padding: EdgeInsets.all(ESizes.sm),
             width: 56,
             height: 56,
             decoration: BoxDecoration(
@@ -44,7 +43,7 @@ class EVerticalImageText extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: ESizs.spaceBtwItems / 2),
+          SizedBox(height: ESizes.spaceBtwItems / 2),
           SizedBox(
             width: 56,
             child: Text(

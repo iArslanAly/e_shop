@@ -15,9 +15,9 @@ class EFormDivider extends StatelessWidget {
       children: [
         Flexible(
           child: Divider(
-            thickness: ESizs.dividerHeight,
-            endIndent: ESizs.defaultSpace,
-            indent: ESizs.defaultSpace,
+            thickness: ESizes.dividerHeight,
+            endIndent: ESizes.defaultSpace,
+            indent: ESizes.defaultSpace,
             color: EColors.darkGrey,
           ),
         ),
@@ -29,9 +29,9 @@ class EFormDivider extends StatelessWidget {
         ),
         Flexible(
           child: Divider(
-            thickness: ESizs.dividerHeight,
-            endIndent: ESizs.defaultSpace,
-            indent: ESizs.defaultSpace,
+            thickness: ESizes.dividerHeight,
+            endIndent: ESizes.defaultSpace,
+            indent: ESizes.defaultSpace,
             color: EColors.darkGrey,
           ),
         ),

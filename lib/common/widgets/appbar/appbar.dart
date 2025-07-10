@@ -20,7 +20,7 @@ class EAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: ESizs.md),
+      padding: EdgeInsets.symmetric(horizontal: ESizes.md),
       child: AppBar(
         automaticallyImplyLeading: false,
         leading: showBackArrow

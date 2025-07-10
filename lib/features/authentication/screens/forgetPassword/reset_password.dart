@@ -29,7 +29,7 @@ class ResetPassword extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(ESizs.defaultSpace),
+          padding: const EdgeInsets.all(ESizes.defaultSpace),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -42,19 +42,19 @@ class ResetPassword extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizs.spaceBtwItems),
+              const SizedBox(height: ESizes.spaceBtwItems),
               Text(
                 'iarslanaly@yahooo.com',
                 style: Theme.of(context).textTheme.labelLarge,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizs.defaultSpace),
+              const SizedBox(height: ESizes.defaultSpace),
               Text(
                 ETextStrings.authPasswordRestEmailSentSubtitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizs.spaceBtwItems),
+              const SizedBox(height: ESizes.spaceBtwItems),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -70,7 +70,7 @@ class ResetPassword extends StatelessWidget {
                   child: const Text(ETextStrings.done),
                 ),
               ),
-              const SizedBox(height: ESizs.defaultSpace),
+              const SizedBox(height: ESizes.defaultSpace),
               TextButton(
                 onPressed: () {
                   // Handle resend email logic here
@@ -82,9 +82,9 @@ class ResetPassword extends StatelessWidget {
                     ),
                   );
                 },
-                child: Text(    
+                child: Text(
                   ETextStrings.authResendEmail,
-                  style: Theme.of(context).textTheme.labelMedium
+                  style: Theme.of(context).textTheme.labelMedium,
                 ),
               ),
             ],

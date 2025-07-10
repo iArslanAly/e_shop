@@ -19,8 +19,8 @@ class EHomeCategory extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: EdgeInsets.only(
-              left: index == 0 ? ESizs.spaceBtwSections : 0,
-              right: ESizs.spaceBtwItems,
+              left: index == 0 ? ESizes.spaceBtwSections : 0,
+              right: ESizes.spaceBtwItems,
             ),
             child: EVerticalImageText(
               image: EImages.sportIcon,

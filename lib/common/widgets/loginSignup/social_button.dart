@@ -12,7 +12,7 @@ class TSocialButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          margin: const EdgeInsets.all(ESizs.xs),
+          margin: const EdgeInsets.all(ESizes.xs),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(color: EColors.darkGrey, width: 1),
@@ -20,8 +20,8 @@ class TSocialButton extends StatelessWidget {
           child: IconButton(
             icon: Image.asset(
               EImages.google,
-              height: ESizs.icond,
-              width: ESizs.icond,
+              height: ESizes.iconMd,
+              width: ESizes.iconMd,
             ),
             onPressed: () {
               // Handle Google login
@@ -29,7 +29,7 @@ class TSocialButton extends StatelessWidget {
           ),
         ),
         Container(
-          margin: const EdgeInsets.all(ESizs.xs),
+          margin: const EdgeInsets.all(ESizes.xs),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(color: EColors.darkGrey, width: 1),
@@ -37,8 +37,8 @@ class TSocialButton extends StatelessWidget {
           child: IconButton(
             icon: Image.asset(
               EImages.facebook,
-              height: ESizs.icond,
-              width: ESizs.icond,
+              height: ESizes.iconMd,
+              width: ESizes.iconMd,
             ),
             onPressed: () {
               // Handle Facebook login

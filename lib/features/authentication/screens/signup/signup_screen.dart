@@ -20,7 +20,6 @@ class SignupScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
             Text(
               ETextStrings.authRegisterTitle,
               style: Theme.of(context).textTheme.headlineMedium,
@@ -28,10 +27,10 @@ class SignupScreen extends StatelessWidget {
             const SizedBox(height: 32.0),
             // signup form here
             SignupForm(),
-            const SizedBox(height: ESizs.spaceBtwSections),
+            const SizedBox(height: ESizes.spaceBtwSections),
             // Divider for social signup section
             EFormDivider(text: ETextStrings.authSocialSignupTitle),
-            const SizedBox(height: ESizs.spaceBtwSections),
+            const SizedBox(height: ESizes.spaceBtwSections),
             // Social signup buttons
             TSocialButton(),
           ],

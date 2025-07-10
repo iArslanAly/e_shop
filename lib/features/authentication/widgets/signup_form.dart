@@ -26,7 +26,7 @@ class SignupForm extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: ESizs.spaceBtwInputFields),
+              const SizedBox(width: ESizes.spaceBtwInputFields),
               Expanded(
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -38,7 +38,7 @@ class SignupForm extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: ESizs.spaceBtwInputFields),
+          SizedBox(height: ESizes.spaceBtwInputFields),
           TextFormField(
             decoration: InputDecoration(
               prefixIcon: Icon(Iconsax.user_add),
@@ -46,7 +46,7 @@ class SignupForm extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: ESizs.spaceBtwInputFields),
+          SizedBox(height: ESizes.spaceBtwInputFields),
           TextFormField(
             decoration: InputDecoration(
               prefixIcon: Icon(Iconsax.call),
@@ -54,7 +54,7 @@ class SignupForm extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwInputFields),
+          const SizedBox(height: ESizes.spaceBtwInputFields),
           TextFormField(
             obscureText: true,
             decoration: InputDecoration(
@@ -64,7 +64,7 @@ class SignupForm extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwInputFields),
+          const SizedBox(height: ESizes.spaceBtwInputFields),
           TextFormField(
             obscureText: true,
             decoration: InputDecoration(
@@ -74,17 +74,17 @@ class SignupForm extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwInputFields),
+          const SizedBox(height: ESizes.spaceBtwInputFields),
           IntrinsicHeight(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: ESizs.lg,
-                  width: ESizs.lg,
+                  height: ESizes.lg,
+                  width: ESizes.lg,
                   child: Checkbox(value: false, onChanged: (value) {}),
                 ),
-                const SizedBox(width: ESizs.defaultSpace),
+                const SizedBox(width: ESizes.defaultSpace),
                 Expanded(
                   child: Text.rich(
                     TextSpan(
@@ -118,7 +118,7 @@ class SignupForm extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: ESizs.spaceBtwSections),
+          const SizedBox(height: ESizes.spaceBtwSections),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
